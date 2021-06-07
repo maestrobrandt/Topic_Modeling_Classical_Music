@@ -48,7 +48,7 @@ To analyze harmonies of classical music, I got my data from a cross-composer dat
 
 After running my analysis, I settled on 24 topics. This is because the analysis returned topics that were just the keys that the songs were in. There are 24 possible keys: these are based on the 12 different notes in the chromatic scale, both in major and minor tonalities. As a result, there were 24 keys and 24 topics. To give you a better idea, I have provided the first three “topics/keys”. Consistently, all the topics' most common chord was the I chord - this is the name of the key, such A Maj or Eb Maj - followed by the IV or V chord of the key.
 
-![Topics Image](https://media-exp1.licdn.com/dms/image/C4E12AQFG6Mf-T8rtPg/article-inline_image-shrink_1000_1488/0/1614709408498?e=1627516800&v=beta&t=zl-AVeW46zrFvlyNSd6O3-qbqmWj07bvWyVo7E6lIzc)
+![Topics Image](https://media-exp3.licdn.com/dms/image/C4D12AQHQoHRzWsw2zQ/article-inline_image-shrink_1500_2232/0/1623092866191?e=1628726400&v=beta&t=RzlSSrJc6DtJ_O7zLrg5_ThXYgh4RmtjnkhSrrznkTo)
 
 Using t-SNE to visualize does a fairly decent job of discerning the separation between keys. However, when I hue the graph by composers to see the separation between composers, I get a jumbled mess. This was discouraging to me at first, but all this really means is that all of my composers composed pieces in pretty much every different key. In order to uncover meaningful distinctions, I now needed to measure differences in harmonic styles between the composers.
 
@@ -66,9 +66,9 @@ ___
 
 I generated new music by training a neural network to encode music by a certain composer and to compose a new piece based on the learned music. I took the MIDI files of a composer, converted the data to an array, had the neural network encode and model it, then had it generate the output: music. I have provided two generated examples: one from the most harmonically-simple composer, and one from the most complex. Feel free to listen to the differences yourself.
 
-![Beet](https://youtu.be/J70VLPFTs_Y)
+![Beethoven](https://youtu.be/J70VLPFTs_Y)
 
-![Shosta](https://youtu.be/rtLVYekxN2Y)
+![Shostakovich](https://youtu.be/rtLVYekxN2Y)
 
 ## Future Consideration
 
